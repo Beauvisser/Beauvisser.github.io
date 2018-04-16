@@ -1,0 +1,374 @@
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100vw;
+  overflow-x:hidden;
+}
+
+section {
+  height: 950px;
+  padding-top: 200px;
+}
+
+
+
+ /* ----- THE HEADER ------- */
+
+   /* Style the header */
+.header {
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  padding-top: 20px;
+  box-shadow: 0 2px 13px 0 rgba(0,0,0,0.11);
+  position: fixed;
+  z-index: 1;
+
+}
+
+.header img {
+  height: 35px;
+  float: left;
+  margin-left: 20px;
+  transition: all 1s;
+
+}
+
+.header img:hover {
+  -webkit-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+        transition-timing-function: ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    margin-right: 20px;
+
+}
+
+li {
+    display: inline;
+    float: right;
+    margin-left: 20px;
+}
+
+li a {
+  color: #071933;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+}
+
+li a:hover {
+  color: #267BD7;
+  text-decoration: underline;
+}
+
+ /* ----- About ------- */
+
+ #about {
+  background-image: url("water.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+ }
+
+ .text-block {
+  background-color: black;
+  margin: 0 auto;
+  min-width: 200px;
+  max-width: 400px;
+  opacity: 0.8;
+  padding: 20px;
+  transition: all 0.5s;
+
+ }
+
+
+ .text-block:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+}
+
+  .text-block p {
+  color: white;
+  font-weight: 200;
+  line-height: 24px;
+
+ }
+
+
+  .text-block h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0;
+  margin-top: 20px;
+ }
+
+
+ /* ----- Bevolking ------- */
+
+ #bevolking {
+  padding: 0;
+  width: 100%;
+  background-image: url("delta-bevolking.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   
+ }
+
+  #estuaria {
+  padding: 0;
+  width: 100%;
+  background-image: url("background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1000px;
+   
+ }
+
+
+ #getijden {
+  background-color: #207ED9;
+  padding-top:100px;
+}
+
+.center {
+  width: 60%;
+  margin: auto;
+}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+  padding: 0;
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #FC1687;
+  border-radius: 50%;
+  cursor: col-resize;
+}
+
+
+   .text-block-b {
+  padding-top: 120px;
+  width: 50%;
+  margin: 0 auto;
+  transition: all 0.5s;
+
+
+ }
+
+  .text-block-b p {
+  color: white;
+  font-weight: 200;
+  line-height: 24px;
+
+ }
+
+   .text-block-b a {
+  padding-top: 50px;
+  text-align: center; 
+  font-size: 16px;
+   color: white;
+   opacity: 0.4;
+   font-style: italic;
+
+ }
+
+  .text-block-b h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0;
+  margin-top: 20px;
+ }
+
+  .text-block-b:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        cursor: text;
+        padding-top: 140px;
+}
+
+   .wereldmap {
+    padding-top: 50px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: white;
+    text-align: center;
+ }
+
+    .wereldmap a {
+    padding-top: 20px;
+  text-align: center; 
+  font-size: 16px;
+   color: white;
+   opacity: 0.4;
+   font-style: italic;
+
+ }
+
+ #energie {
+  padding-top: 50px;
+ }
+
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.img-comp-slider:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+footer {
+background-color: black;
+  display: table;
+  width: 100vw;
+  height: 8rem;
+  text-align: center;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+footer small {
+  color: #ccc;
+  letter-spacing: .025rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.footer-nav a {
+  color: #3561A7;
+  text-decoration: none;
+  margin: 0 .5rem;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.footer-nav a:hover {
+  color: #4C7CFE;
+  transition: color .15s ease-in-out;
+}
+
+
+
+
+
