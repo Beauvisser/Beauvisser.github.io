@@ -1,0 +1,192 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+        <title>Part 2</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+   <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	  
+	</head>
+	
+
+<body>
+
+
+
+	<div class="header" id="myHeader">
+  <img src="image/logo.png">
+ 	 <ul>
+  		<li><a href="#estuaria">Energie</a></li>
+  		<li><a href="#getijden">Tidal Pumping</a></li>
+  		<li><a href="#about">Over</a></li>
+	</ul>
+	</div> 
+
+
+    <section id="about"> 
+        <div class="text-block">
+    <h1>Over het onderwerp</h1>
+    <p> De estuaria van de Theems en de Elbe behoren tot de belangrijkste riviersystemen in Centraal-Europa. Ze hebben een rijk historisch verleden en spelen ook nu nog een belangrijke rol in de industrie, handel, transport, visserij, landbouw en recreatie binnen Europa. Beide estuaria worden gedomineerd door de invloed van getijden en zijn afhankelijk van de door de mens gecreëerde verdedigingssystemen om de veiligheid in en rondom de estuaria de te garanderen. Door toenemende druk, waaronder klimaatverandering en groei van de steden in de estuaria, zal het risico op overstromingen zo klein mogelijk gehouden moeten worden om de levens van miljoenen mensen, grote economische belangen en de unieke natuurgebieden te beschermen.
+    </p>
+  </div>
+
+    </section>
+
+
+    <section id="getijden"> 
+
+
+<div class="center">
+<div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="VLOED.png" width="854" height="277">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="EB.png" width="854" height="277">
+  </div>
+</div>
+</div>
+
+             <div class="text-block-b">
+              <a> Gebruik de slider met je muis</a> 
+    <h1>Tidal Pumping</h1>
+    <p> Voor de Elbe is de getijden periode asymmetrisch, wat betekent dat de vloed-periode korter is dan de eb-periode. De snelheid van de vloedstroom is dus hoger dan die van de ebstroom. Deze twee factoren, verergerd door vele menselijke geïnduceerde veranderingen gedurende vele decennia, hebben geleid tot een zwaar stroomopwaarts transport van sedimenten, een proces genaamd ‘tidal pumping’. Aangezien de zwakkere ebstroom onvoldoende kracht heeft om alle sedimenten terug te brengen naar de monding van de rivier en de Noordzee, wordt materiaal afgezet en opgehoopt in de regio Hamburg. 
+    </p>
+
+<p> Tidal pumping is een grote uitdaging voor het onderhoud van de bevaarbare delen van estuaria. Het volume baggerspecie in Hamburg is de afgelopen tien jaar aanzienlijk toegenomen. Verwacht wordt dat klimaatverandering deze problemen alleen maar zal verergeren, door verhoogde hoge waterstanden die een hoger getijverschil teweegbrengen en dus het tidal pumping effect versterken. </p>
+  </div>
+
+     </section>
+
+
+    <section id="estuaria">  
+<a href="#">
+    <img src="wereldmap.png" class="wereldmap" 
+    onmouseover="this.src='wereldmap_hover.png'"
+    onmouseout="this.src='wereldmap.png'"
+    border="0" alt=""/></a>
+<a class="wereldmap"> In theorie is op elke plek met een kustlijn opwekking van getijdenenergie mogelijk. </a> 
+             <div class="text-block-b" id="energie">
+
+              
+              
+    <h1>Energie</h1>
+    <p> Voor de Europese Unie is oceaanenergie, waaronder energie uit eb en vloed, belangrijk vanuit het oogpunt van leveringszekerheid van energie en werkgelegenheid.  
+    </p>
+
+<p> De meest bekende vormen van oceaanenergie zijn: getijdenenergie (turbines worden aangedreven door zeestromingen als gevolg van eb en vloed); golfenergie (golven zetten vlotters in beweging), Ocean Thermal Energy Conversion (OTEC: warmteverschillen in waterlagen in tropische zeeën verwarmen en koelen een werkvloeistof) en energie uit osmose, waarbij gebruik wordt gemaakt van verschillende zout gradiënten. De Europese industrie investeerde de afgelopen zeven jaar zeshonderd miljoen euro in oceaanenergie.</p>
+
+<p>Getijdenenergie is energie die wordt gewonnen door gebruik te maken van het verschil in waterhoogte tussen eb en vloed. Getijdenenergie heeft de potentie om een belangrijke bijdrage te leveren aan de wereldwijde duurzame energiedoelstelling en is een betrouwbare en duurzame energievorm, die altijd aanwezig is en beter voorspelbaar dan wind- of zonne-energie.</p>
+
+
+  </div>
+
+
+
+    </section>
+
+
+
+    <footer>
+    <div class="wrapper">
+      <small> <strong>Beau Visser</strong> 2018</small>
+      <nav class="footer-nav">
+        <a href="#">Terug naar boven</a>
+      </nav>
+    </div>
+  </footer>
+
+
+
+<script type="text/javascript">
+    
+function initComparisons() {
+  var x, i;
+  /*find all elements with an "overlay" class:*/
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /*once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function:*/
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /*get the width and height of the img element*/
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /*set the width of the img element to 50%:*/
+    img.style.width = (w / 2) + "px";
+    /*create slider:*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /*insert slider*/
+    img.parentElement.insertBefore(slider, img);
+    /*position the slider in the middle:*/
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /*execute a function when the mouse button is pressed:*/
+    slider.addEventListener("mousedown", slideReady);
+    /*and another function when the mouse button is released:*/
+    window.addEventListener("mouseup", slideFinish);
+    /*or touched (for touch screens:*/
+    slider.addEventListener("touchstart", slideReady);
+     /*and released (for touch screens:*/
+    window.addEventListener("touchstop", slideFinish);
+    function slideReady(e) {
+      /*prevent any other actions that may occur when moving over the image:*/
+      e.preventDefault();
+      /*the slider is now clicked and ready to move:*/
+      clicked = 1;
+      /*execute a function when the slider is moved:*/
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /*the slider is no longer clicked:*/
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /*if the slider is no longer clicked, exit this function:*/
+      if (clicked == 0) return false;
+      /*get the cursor's x position:*/
+      pos = getCursorPos(e)
+      /*prevent the slider from being positioned outside the image:*/
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /*execute a function that will resize the overlay image according to the cursor:*/
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = e || window.event;
+      /*get the x positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x coordinate, relative to the image:*/
+      x = e.pageX - a.left;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /*resize the image:*/
+      img.style.width = x + "px";
+      /*position the slider:*/
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+    
+</script>
+
+<script>
+initComparisons();
+</script>
+
+
+
+ 	</body>
+
+	</html>
