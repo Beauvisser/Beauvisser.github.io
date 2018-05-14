@@ -152,7 +152,7 @@ li a:hover {
 
  #getijden {
   background-color: #207ED9;
-  padding-top:100px;
+  padding-top:100px; 
 }
 
 .center {
@@ -193,17 +193,19 @@ li a:hover {
 
    .text-block-b {
   padding-top: 120px;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   transition: all 0.5s;
-
-
+	 
  }
 
   .text-block-b p {
   color: white;
   font-weight: 200;
   line-height: 24px;
+	  
+	 
+	 
 
  }
 
